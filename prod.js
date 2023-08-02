@@ -3,7 +3,7 @@ const url = 'https://course-api.com/javascript-store-single-product'
 
 const fetchProduct = async () => {
     try {
-        productDOM.innerHTML = '<h4 class="product-loading">Loading... </h4>';
+        productsDOM.innerHTML = '<h4 class="product-loading">Loading... </h4>';
         // console.log(window.location.search);
         const params = new URLSearchParams(window.location.search)
         const id = params.get('id')
